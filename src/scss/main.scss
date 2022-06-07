@@ -53,6 +53,8 @@ footer, header, nav, section, main{
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'IBM Plex Sans', sans-serif;
   background: mistyrose;
   font-weight: 400;

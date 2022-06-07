@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -49,13 +49,38 @@ footer, header, nav, section, main {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  font-family: "IBM Plex Sans", sans-serif;
   background: mistyrose;
-  line-height: 1;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
   overflow-x: hidden;
+  color: #191826;
+}
+@media (min-width: 1440px) {
+  body {
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+
+h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 88px;
+  line-height: 88px;
+  letter-spacing: -1px;
+  color: #191826;
+}
+
+h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #191826;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
