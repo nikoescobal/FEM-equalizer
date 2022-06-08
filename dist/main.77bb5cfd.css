@@ -50,9 +50,9 @@ footer, header, nav, section, main {
 
 body {
   display: flex;
+  position: relative;
   flex-direction: column;
   font-family: "IBM Plex Sans", sans-serif;
-  background: mistyrose;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -67,7 +67,12 @@ body {
 }
 
 header {
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 11rem;
+}
+header #bg-main-mobile {
+  position: absolute;
+  top: -225px;
+  left: 0;
 }
 header nav {
   padding: 2.0625rem 0 4rem;
@@ -81,7 +86,9 @@ header .top-content h1 {
   line-height: 48px;
 }
 header .top-content p {
-  padding: 1.25rem 0 0;
+  padding: 1.25rem 0.4px 0 0;
+  width: 325px;
+  font-size: 16px;
 }
 
 main .mid-background {
@@ -89,6 +96,7 @@ main .mid-background {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 12px;
 }
 main .mid-background #phone {
   width: 55.73%;
@@ -99,8 +107,90 @@ main .mid-background #phone {
 }
 main .mid-background #bg-pattern-2 {
   width: 75%;
-  margin: -20.65rem 0 0;
-  object-fit: contain;
+  margin: -20rem 0 0;
+  object-fit: cover;
+}
+main .pricing-card {
+  color: #FCFAF9;
+  background-color: #FA7453;
+  padding: 0 37px 0 36px;
+  margin: -2.7rem 0 0;
+  z-index: 20;
+  border-radius: 12px;
+  position: relative;
+}
+main .pricing-card h2 {
+  color: #FCFAF9;
+  font-size: 32px;
+  line-height: 40px;
+  padding: 2.625rem 0 0.75rem;
+}
+main .pricing-card p {
+  font-size: 18px;
+  line-height: 28px;
+  padding: 0 0 2.25rem;
+}
+main .pricing-card p:last-child {
+  padding: 0;
+}
+main .pricing-card .price {
+  display: flex;
+  vertical-align: middle;
+}
+main .pricing-card .price h3 {
+  font-size: 4.0625rem;
+  line-height: 3.25rem;
+  font-weight: 700;
+  padding: 0 0 2rem;
+}
+main .pricing-card .price p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: -0.2px;
+  margin: 0.625rem 0 0 1rem;
+}
+main .pricing-card .btn-container {
+  display: flex;
+  flex-direction: column;
+}
+main .pricing-card .btn-container button:first-child {
+  background: #191826;
+  color: #FCFAF9;
+  padding: 0.9375rem 0 0.875rem;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.75rem;
+  border: transparent;
+  margin: 0 0 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.18px;
+}
+main .pricing-card .btn-container button:first-child img {
+  padding: 0 7.92px 0 0;
+}
+main .pricing-card .btn-container button:nth-child(2) {
+  background: #FCFAF9;
+  color: #191826;
+  padding: 0.9375rem 0 0.875rem;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.75rem;
+  border: transparent;
+  margin: 0 0 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.18px;
+}
+main .pricing-card .btn-container button:nth-child(2) img {
+  padding: 0 7.92px 0 0;
 }
 
 h1 {
@@ -118,6 +208,19 @@ h2 {
   font-size: 40px;
   line-height: 52px;
   color: #191826;
+}
+
+footer {
+  padding: 4rem 1.5rem;
+}
+footer p {
+  margin: 0;
+  padding: 2rem 0 4rem;
+}
+footer .social-icons {
+  display: flex;
+  width: 33%;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
