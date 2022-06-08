@@ -213,9 +213,11 @@ h2 {
 footer {
   padding: 4rem 1.5rem;
 }
-footer p {
-  margin: 0;
+footer .footer-content {
   padding: 2rem 0 4rem;
+}
+footer span {
+  font-weight: 700;
 }
 footer .social-icons {
   display: flex;
