@@ -66,6 +66,43 @@ body {
   }
 }
 
+header {
+  padding: 0 1.5rem;
+}
+header nav {
+  padding: 2.0625rem 0 4rem;
+}
+header .top-content h1 {
+  color: #191826;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-size: 40px;
+  line-height: 48px;
+}
+header .top-content p {
+  padding: 1.25rem 0 0;
+}
+
+main .mid-background {
+  background: #191826;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .mid-background #phone {
+  width: 55.73%;
+  object-fit: contain;
+  align-items: center;
+  margin: -100px 0 0;
+  z-index: 1;
+}
+main .mid-background #bg-pattern-2 {
+  width: 75%;
+  margin: -20.65rem 0 0;
+  object-fit: contain;
+}
+
 h1 {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
