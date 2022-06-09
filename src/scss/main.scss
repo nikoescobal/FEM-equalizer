@@ -97,7 +97,7 @@ header {
   }
 
   @include lg {
-    padding: 0 0 19.75rem 10.3125rem;
+    padding: 0 0 20.75rem 10.3125rem;
   }
 
   .bg-image-container {
@@ -218,6 +218,10 @@ main {
       min-height: 37.5rem;
     }
 
+    @include lg {
+      margin: 0 10.3125rem;
+    }
+
     #phone {
       width: 55.73%;
       object-fit: contain;
@@ -228,6 +232,12 @@ main {
       @include md {
         width: 35.185%;
         margin: -8.125rem 20rem 0 0;
+      }
+
+      @include lg {
+        width: 28.11%;
+        margin: -13rem 37rem 0 0;
+        position: relative;
       }
     }
 
@@ -240,6 +250,11 @@ main {
         width: 42%;
         margin: -26rem 0.3rem 0 0;
       }
+
+      @include lg {
+        width: 28.11%;
+        margin: -29.5rem 0 0 -7.8rem;
+      }
     }
   }
 
@@ -251,17 +266,23 @@ main {
     z-index: 20;
     border-radius: 12px;
     position: relative;
+    height: 34.125rem;
 
     @include md {
       margin: -28.3rem 16.2rem 0;
       width: 55%;
     }
 
+    @include lg {
+      margin: -31.75rem 0 16.2rem 46rem;
+      width: 31%;
+    }
+
     h2 {
       color: $white;
       font-size: 32px;
       line-height: 40px;
-      padding: 2.625rem 0 0.75rem;
+      padding: 3rem 0 0.75rem;
     }
 
     p {
@@ -299,7 +320,7 @@ main {
     .btn-container {
       display: flex;
       flex-direction: column;
-      padding: 0 0 2rem;
+      padding: 0 0 2.25rem;
 
       button:first-child {
         background: $black;
@@ -313,10 +334,7 @@ main {
         @include btn-style()
       }
     }
-
-
-  }
-  
+  }  
 }
 
 h2 {
