@@ -303,16 +303,43 @@ h2 {
 footer {
   padding: 4rem 1.5rem;
 }
-footer .footer-content {
+@media (min-width: 768px) {
+  footer {
+    padding: 5.4375rem 2.4375rem 5.3125rem 2.0625rem;
+  }
+}
+@media (min-width: 768px) {
+  footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+footer .footer-container .footer-content {
   padding: 2rem 0 4rem;
 }
-footer span {
+@media (min-width: 768px) {
+  footer .footer-container .footer-content p {
+    width: 67%;
+  }
+}
+footer .footer-container .footer-content span {
   font-weight: 700;
 }
 footer .social-icons {
   display: flex;
-  width: 33%;
-  justify-content: space-between;
+  object-fit: cover;
+}
+footer .social-icons img {
+  padding: 0 1rem 0 0;
+}
+@media (min-width: 768px) {
+  footer .social-icons {
+    margin: 0 0 2.5rem;
+  }
+  footer .social-icons img {
+    padding: 0 0 0 1.25rem;
+  }
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

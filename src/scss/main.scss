@@ -320,19 +320,47 @@ h2 {
 footer {
   padding: 4rem 1.5rem;
 
-  .footer-content {
-    padding: 2rem 0 4rem;
+  @include md {
+    padding: 5.4375rem 2.4375rem 5.3125rem 2.0625rem;
   }
 
+  .footer-container {
+    @include md {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .footer-content {
+      padding: 2rem 0 4rem;
+      
+      p {
+        @include md {
+          width: 67%;
+        }
+      }
 
-  span {
-    font-weight: 700;
+  
+      span {
+        font-weight: 700;
+      }
+    }
   }
-
 
   .social-icons {
     display: flex;
-    width: 33%;
-    justify-content: space-between;
+    object-fit: cover;
+
+    img {
+      padding: 0 1rem 0 0;
+    }
+
+    @include md {
+      margin: 0 0 2.5rem;  
+
+      img {
+        padding: 0 0 0 1.25rem;
+      }
+    }
   }
 }
