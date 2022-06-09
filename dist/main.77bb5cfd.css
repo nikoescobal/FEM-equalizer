@@ -131,8 +131,8 @@ header .bg-image-container #bg-main-desktop {
   header .bg-image-container #bg-main-desktop {
     display: block;
     position: absolute;
-    top: -19.0625rem;
-    left: -17.5rem;
+    top: -18rem;
+    left: -16.5rem;
   }
 }
 header nav {
@@ -250,13 +250,16 @@ main .pricing-card {
 @media (min-width: 768px) {
   main .pricing-card {
     margin: -28.3rem 16.2rem 0;
+    padding: 0 49px 0 48px;
     width: 55%;
   }
 }
 @media (min-width: 1440px) {
   main .pricing-card {
-    margin: -31.75rem 0 16.2rem 46rem;
+    margin: -31.75rem 45.75rem 0;
     width: 31%;
+    padding: 0 59px 0 54px;
+    height: 39.0625rem;
   }
 }
 main .pricing-card h2 {
@@ -265,10 +268,24 @@ main .pricing-card h2 {
   line-height: 40px;
   padding: 3rem 0 0.75rem;
 }
+@media (min-width: 1440px) {
+  main .pricing-card h2 {
+    font-size: 40px;
+    line-height: 52px;
+    padding: 3.625rem 0 1.375rem 0;
+  }
+}
 main .pricing-card p {
   font-size: 18px;
   line-height: 28px;
   padding: 0 0 2.25rem;
+}
+@media (min-width: 1440px) {
+  main .pricing-card p {
+    font-size: 20px;
+    line-height: 34px;
+    padding: 0 0 2.4375rem;
+  }
 }
 main .pricing-card p:last-child {
   padding: 0;
@@ -283,6 +300,13 @@ main .pricing-card .price h3 {
   font-weight: 700;
   padding: 0 0 2rem;
 }
+@media (min-width: 1440px) {
+  main .pricing-card .price h3 {
+    font-size: 65px;
+    line-height: 52px;
+    padding: 0 0 2.875rem;
+  }
+}
 main .pricing-card .price p {
   font-size: 1.25rem;
   font-weight: 400;
@@ -293,7 +317,7 @@ main .pricing-card .price p {
 main .pricing-card .btn-container {
   display: flex;
   flex-direction: column;
-  padding: 0 0 2.25rem;
+  padding: 0 0 2.125rem;
 }
 main .pricing-card .btn-container button:first-child {
   background: #191826;
@@ -344,10 +368,30 @@ h2 {
 
 footer {
   padding: 4rem 1.5rem 5rem;
+  position: relative;
 }
 @media (min-width: 768px) {
   footer {
     padding: 5.4375rem 2.4375rem 5.3125rem 2.0625rem;
+  }
+}
+@media (min-width: 1440px) {
+  footer {
+    padding: 5.4375rem 10.3125rem 5.3125rem;
+  }
+}
+footer .bg-image-footer {
+  display: none;
+}
+@media (min-width: 1440px) {
+  footer .bg-image-footer {
+    display: block;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+  footer .bg-image-footer img {
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
