@@ -102,10 +102,16 @@ header .bg-image-container #bg-main-tablet {
   }
 }
 header .bg-image-container #bg-pattern-1 {
-  position: absolute;
-  width: 16.73rem;
-  top: -3rem;
-  right: -2.5rem;
+  display: none;
+}
+@media (min-width: 768px) {
+  header .bg-image-container #bg-pattern-1 {
+    display: block;
+    position: absolute;
+    width: 16.73rem;
+    top: -2rem;
+    right: -2.3rem;
+  }
 }
 header .bg-image-container #bg-main-desktop {
   display: none;
@@ -157,6 +163,12 @@ main .mid-background {
   align-items: center;
   border-radius: 12px;
 }
+@media (min-width: 768px) {
+  main .mid-background {
+    margin: 0 39px 0 33px;
+    min-height: 37.5rem;
+  }
+}
 main .mid-background #phone {
   width: 55.73%;
   object-fit: contain;
@@ -164,10 +176,22 @@ main .mid-background #phone {
   margin: -100px 0 0;
   z-index: 1;
 }
+@media (min-width: 768px) {
+  main .mid-background #phone {
+    width: 35.185%;
+    margin: -8.125rem 20rem 0 0;
+  }
+}
 main .mid-background #bg-pattern-2 {
   width: 75%;
   margin: -20rem 0 0;
   object-fit: cover;
+}
+@media (min-width: 768px) {
+  main .mid-background #bg-pattern-2 {
+    width: 42%;
+    margin: -26rem 0.3rem 0 0;
+  }
 }
 main .pricing-card {
   color: #FCFAF9;
@@ -177,6 +201,12 @@ main .pricing-card {
   z-index: 20;
   border-radius: 12px;
   position: relative;
+}
+@media (min-width: 768px) {
+  main .pricing-card {
+    margin: -28.3rem 16.2rem 0;
+    width: 55%;
+  }
 }
 main .pricing-card h2 {
   color: #FCFAF9;

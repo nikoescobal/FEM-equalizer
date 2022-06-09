@@ -123,10 +123,15 @@ header {
     }
 
     #bg-pattern-1 {
-      position: absolute;
-      width: 16.73rem;
-      top: -3rem;
-      right: -2.5rem;
+      display: none;
+
+      @include md {
+        display: block;
+        position: absolute;
+        width: 16.73rem;
+        top: -2rem;
+        right: -2.3rem;
+      }
     }
 
     #bg-main-desktop {
@@ -188,18 +193,33 @@ main {
     align-items: center;
     border-radius: 12px;
 
+    @include md {
+      margin: 0 39px 0 33px;
+      min-height: 37.5rem;
+    }
+
     #phone {
       width: 55.73%;
       object-fit: contain;
       align-items: center;
       margin: -100px 0 0;
       z-index: 1;
+
+      @include md {
+        width: 35.185%;
+        margin: -8.125rem 20rem 0 0;
+      }
     }
 
     #bg-pattern-2 {
       width: 75%;
       margin: -20rem 0 0;
       object-fit: cover; 
+
+      @include md {
+        width: 42%;
+        margin: -26rem 0.3rem 0 0;
+      }
     }
   }
 
@@ -211,6 +231,11 @@ main {
     z-index: 20;
     border-radius: 12px;
     position: relative;
+
+    @include md {
+      margin: -28.3rem 16.2rem 0;
+      width: 55%;
+    }
 
     h2 {
       color: $white;
