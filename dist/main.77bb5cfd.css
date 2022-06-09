@@ -301,7 +301,7 @@ h2 {
 }
 
 footer {
-  padding: 4rem 1.5rem;
+  padding: 4rem 1.5rem 5rem;
 }
 @media (min-width: 768px) {
   footer {
@@ -317,6 +317,11 @@ footer {
 }
 footer .footer-container .footer-content {
   padding: 2rem 0 4rem;
+}
+@media (min-width: 768px) {
+  footer .footer-container .footer-content {
+    padding: 2rem 0 0;
+  }
 }
 @media (min-width: 768px) {
   footer .footer-container .footer-content p {
