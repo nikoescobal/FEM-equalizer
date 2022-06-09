@@ -92,11 +92,52 @@ header {
   overflow: hidden;
   position: relative;
 
-  #bg-main-mobile {
-    position: absolute;
-    overflow: hidden;
-    top: -225px;
-    left: 0;
+  @include md {
+    padding: 0 2.5rem 11rem;
+  }
+
+  .bg-image-container {
+    #bg-main-mobile {
+      position: absolute;
+      top: -14.0625rem;
+      left: 0;
+
+      @include md {
+        display: none;
+      }
+    }
+
+    #bg-main-tablet {
+      display: none;
+
+      @include md {
+      display: block;
+      position: absolute;
+      top: -17.0625rem;
+      left: -20.0625rem;
+      }
+
+      @include lg {
+        display: none;
+      }
+    }
+
+    #bg-pattern-1 {
+      position: absolute;
+      width: 16.73rem;
+      top: -3rem;
+      right: -2.5rem;
+    }
+
+    #bg-main-desktop {
+      display: none;
+
+      @include lg {
+      position: absolute;
+      top: -225px;
+      left: 0;
+      }
+    }
   }
 
   nav {
@@ -111,12 +152,26 @@ header {
       letter-spacing: -1px;
       font-size: 40px;
       line-height: 48px;
+
+      @include md {
+        font-size: 4rem;
+        line-height: 4rem;
+        letter-spacing: 0.73px;
+        width: 70%;
+        margin: 2.75rem 0 0;
+      }
     }
 
     p {
       padding: 1.25rem 0.4px 0 0;
       width: 325px;
       font-size: 16px;
+
+      @include md {
+        font-size: 18px;
+        line-height: 28px;
+        width: 74%;
+      }
     }
   }
 
