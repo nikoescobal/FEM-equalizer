@@ -50,7 +50,6 @@ footer, header, nav, section, main {
 
 body {
   display: flex;
-  position: relative;
   flex-direction: column;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
@@ -68,9 +67,12 @@ body {
 
 header {
   padding: 0 1.5rem 11rem;
+  overflow: hidden;
+  position: relative;
 }
 header #bg-main-mobile {
   position: absolute;
+  overflow: hidden;
   top: -225px;
   left: 0;
 }
