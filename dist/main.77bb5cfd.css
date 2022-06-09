@@ -155,6 +155,7 @@ main .pricing-card .price p {
 main .pricing-card .btn-container {
   display: flex;
   flex-direction: column;
+  padding: 0 0 2rem;
 }
 main .pricing-card .btn-container button:first-child {
   background: #191826;

@@ -199,6 +199,7 @@ main {
     .btn-container {
       display: flex;
       flex-direction: column;
+      padding: 0 0 2rem;
 
       button:first-child {
         background: $black;
