@@ -142,7 +142,6 @@ header {
       @include lg {
         width: 19.5rem;
         right: 0;
-
       }
     }
 
@@ -207,7 +206,6 @@ header {
 }
 
 main {
-  
   .mid-background {
     background: $black;
     display: flex;
@@ -346,13 +344,29 @@ main {
       button:first-child {
         background: $black;
         color: $white;
-        @include btn-style()
+        transition-timing-function: ease-in-out;
+        -webkit-transition: 200ms;
+        -webkit-transition-timing-function: ease-in-out;
+
+        &:hover {
+          background: $teal;
+          cursor: pointer;
+        }
+        @include btn-style();
       }
 
       button:nth-child(2) {
         background: $white;
         color: $black;
-        @include btn-style()
+        transition-timing-function: ease-in-out;
+        -webkit-transition: 200ms;
+        -webkit-transition-timing-function: ease-in-out;
+
+        &:hover {
+          background: $light-orange;
+          cursor: pointer;
+        }
+        @include btn-style();
       }
     }
   }  

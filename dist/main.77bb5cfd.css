@@ -324,6 +324,9 @@ main .pricing-card .btn-container {
 main .pricing-card .btn-container button:first-child {
   background: #191826;
   color: #FCFAF9;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
   padding: 0.9375rem 0 0.875rem;
   vertical-align: middle;
   align-items: center;
@@ -336,6 +339,10 @@ main .pricing-card .btn-container button:first-child {
   line-height: 2rem;
   font-weight: 700;
   letter-spacing: -0.18px;
+}
+main .pricing-card .btn-container button:first-child:hover {
+  background: #66E2DC;
+  cursor: pointer;
 }
 main .pricing-card .btn-container button:first-child img {
   padding: 0 7.92px 0 0;
@@ -343,6 +350,9 @@ main .pricing-card .btn-container button:first-child img {
 main .pricing-card .btn-container button:nth-child(2) {
   background: #FCFAF9;
   color: #191826;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
   padding: 0.9375rem 0 0.875rem;
   vertical-align: middle;
   align-items: center;
@@ -355,6 +365,10 @@ main .pricing-card .btn-container button:nth-child(2) {
   line-height: 2rem;
   font-weight: 700;
   letter-spacing: -0.18px;
+}
+main .pricing-card .btn-container button:nth-child(2):hover {
+  background: #FFB964;
+  cursor: pointer;
 }
 main .pricing-card .btn-container button:nth-child(2) img {
   padding: 0 7.92px 0 0;
