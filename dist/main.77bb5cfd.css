@@ -171,6 +171,7 @@ header .top-content p {
 }
 @media (min-width: 768px) {
   header .top-content p {
+    padding: 1.75rem 0.4px 0 0;
     font-size: 18px;
     line-height: 28px;
     width: 74%;
@@ -178,6 +179,7 @@ header .top-content p {
 }
 @media (min-width: 1440px) {
   header .top-content p {
+    padding: 2.5rem 0.4px 0 0;
     font-size: 20px;
     line-height: 34px;
     width: 65%;
@@ -418,7 +420,6 @@ footer .bg-image-footer {
 }
 footer img:nth-child(2) {
   object-fit: contain;
-  max-width: 146px;
 }
 @media (min-width: 768px) {
   footer .footer-container {
@@ -459,11 +460,18 @@ footer .social-icons img {
   transition-timing-function: ease-in-out;
   -webkit-transition: 200ms;
   -webkit-transition-timing-function: ease-in-out;
-  padding: 0 1.25rem 0 0;
 }
 footer .social-icons img:hover {
   cursor: pointer;
   filter: invert(57%) sepia(39%) saturate(4276%) hue-rotate(331deg) brightness(113%) contrast(96%);
+}
+@media (min-width: 768px) {
+  footer .social-icons {
+    margin: 0 0 -1.5rem;
+  }
+  footer .social-icons img {
+    padding: 0 0 0 1.25rem;
+  }
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
