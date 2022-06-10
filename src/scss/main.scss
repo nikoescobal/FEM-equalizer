@@ -80,6 +80,7 @@ body {
   line-height: 26px;
   overflow-x: hidden;
   color: $black;
+  background: $white;
 
   @include lg {
     font-size: 20px;
@@ -135,6 +136,7 @@ header {
         width: 16.73rem;
         top: -2rem;
         right: -2.3rem;
+        z-index: 6;
       }
 
       @include lg {
@@ -157,7 +159,7 @@ header {
   }
 
   nav {
-    padding: 2.0625rem 0 4rem;
+    padding: 3.874375rem 0 4rem;
   }
 
   .top-content {
@@ -381,9 +383,13 @@ footer {
 
     @include lg {
       display: block;
-      bottom: 0;
+      bottom: 14rem;
       right: 0;
       position: absolute;
+      background: $dark-orange;
+      mix-blend-mode: normal;
+      opacity: 0.15;
+      filter: blur(135.914px);
 
       img {
         width: 100%;

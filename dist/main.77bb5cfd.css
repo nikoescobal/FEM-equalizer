@@ -57,6 +57,7 @@ body {
   line-height: 26px;
   overflow-x: hidden;
   color: #191826;
+  background: #FCFAF9;
 }
 @media (min-width: 1440px) {
   body {
@@ -116,6 +117,7 @@ header .bg-image-container #bg-pattern-1 {
     width: 16.73rem;
     top: -2rem;
     right: -2.3rem;
+    z-index: 6;
   }
 }
 @media (min-width: 1440px) {
@@ -136,7 +138,7 @@ header .bg-image-container #bg-main-desktop {
   }
 }
 header nav {
-  padding: 2.0625rem 0 4rem;
+  padding: 3.874375rem 0 4rem;
 }
 header .top-content h1 {
   color: #191826;
@@ -386,9 +388,13 @@ footer .bg-image-footer {
 @media (min-width: 1440px) {
   footer .bg-image-footer {
     display: block;
-    bottom: 0;
+    bottom: 14rem;
     right: 0;
     position: absolute;
+    background: #FA7453;
+    mix-blend-mode: normal;
+    opacity: 0.15;
+    filter: blur(135.914px);
   }
   footer .bg-image-footer img {
     width: 100%;
