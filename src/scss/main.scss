@@ -438,9 +438,18 @@ footer {
   .social-icons {
     display: flex;
     object-fit: cover;
-
+    
     img {
-      padding: 0 1rem 0 0;
+      transition: 200ms;
+      transition-timing-function: ease-in-out;
+      -webkit-transition: 200ms;
+      -webkit-transition-timing-function: ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        filter: invert(57%) sepia(39%) saturate(4276%) hue-rotate(331deg) brightness(113%) contrast(96%);
+      }
+  
     }
 
     @include md {
