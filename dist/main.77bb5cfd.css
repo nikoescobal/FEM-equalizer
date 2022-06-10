@@ -380,6 +380,8 @@ footer {
 @media (min-width: 1440px) {
   footer {
     padding: 5.4375rem 10.3125rem 5.3125rem;
+    display: flex;
+    justify-content: space-between;
   }
 }
 footer .bg-image-footer {
@@ -400,6 +402,9 @@ footer .bg-image-footer {
     width: 100%;
   }
 }
+footer img:nth-child(2) {
+  object-fit: contain;
+}
 @media (min-width: 768px) {
   footer .footer-container {
     display: flex;
@@ -418,6 +423,13 @@ footer .footer-container .footer-content {
 @media (min-width: 768px) {
   footer .footer-container .footer-content p {
     width: 67%;
+  }
+}
+@media (min-width: 1440px) {
+  footer .footer-container .footer-content {
+    margin: 0 4.5rem 0 0;
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 footer .footer-container .footer-content span {

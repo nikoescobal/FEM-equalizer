@@ -376,6 +376,8 @@ footer {
 
   @include lg {
     padding: 5.4375rem 10.3125rem 5.3125rem;
+    display: flex;
+    justify-content: space-between;
   }
 
   .bg-image-footer {
@@ -395,6 +397,10 @@ footer {
         width: 100%;
       }
     }
+  }
+
+  img:nth-child(2) {
+    object-fit: contain;
   }
 
   .footer-container {
@@ -417,6 +423,11 @@ footer {
         }
       }
 
+      @include lg {
+        margin: 0 4.5rem 0 0;
+        font-size: 16px;
+        line-height: 26px;
+      }
   
       span {
         font-weight: 700;
