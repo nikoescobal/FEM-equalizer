@@ -418,6 +418,7 @@ footer .bg-image-footer {
 }
 footer img:nth-child(2) {
   object-fit: contain;
+  max-width: 146px;
 }
 @media (min-width: 768px) {
   footer .footer-container {
