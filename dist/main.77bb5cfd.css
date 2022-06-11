@@ -162,7 +162,7 @@ header .top-content h1 {
     font-size: 88px;
     line-height: 88px;
     letter-spacing: -1px;
-    padding: 6px 0 0 0;
+    padding: 3rem 0 0 0;
   }
 }
 header .top-content p {
@@ -202,7 +202,7 @@ main .mid-background {
 }
 @media (min-width: 1440px) {
   main .mid-background {
-    margin: 0 10.3125rem 1rem;
+    margin: 0 10.3125rem 0.625rem;
   }
 }
 main .mid-background #phone {
@@ -221,7 +221,7 @@ main .mid-background #phone {
 @media (min-width: 1440px) {
   main .mid-background #phone {
     width: 28.11%;
-    margin: -13rem 37rem 0 0;
+    margin: -13.25rem 37rem 0 0;
     position: relative;
   }
 }
