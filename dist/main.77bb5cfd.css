@@ -115,7 +115,7 @@ header .bg-image-container #bg-pattern-1 {
     display: block;
     position: absolute;
     width: 16.73rem;
-    top: -2rem;
+    top: -2.5rem;
     right: -2.3rem;
     z-index: 6;
   }
@@ -154,7 +154,7 @@ header .top-content h1 {
     line-height: 4rem;
     letter-spacing: 0.73px;
     width: 70%;
-    margin: 2.75rem 0 0;
+    padding: 2.75rem 0 0;
   }
 }
 @media (min-width: 1440px) {
@@ -289,6 +289,7 @@ main .pricing-card p {
     font-size: 20px;
     line-height: 34px;
     padding: 0 0 2.4375rem;
+    width: 21rem;
   }
 }
 main .pricing-card p:last-child {
