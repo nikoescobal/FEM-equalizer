@@ -1,4 +1,4 @@
-# Responsive Product Landing Page
+# Equalizer Landing Page (fully responsive)
 > This project is about building a responsive product landing page using just HTML and CSS. It serves as a good practice for implementing detailed designs with precision.
 
 ## Built with
