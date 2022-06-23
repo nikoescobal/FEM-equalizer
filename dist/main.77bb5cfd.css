@@ -457,6 +457,7 @@ footer .footer-container .footer-content span {
 footer .social-icons {
   display: flex;
   object-fit: cover;
+  gap: 1.25rem;
 }
 footer .social-icons img {
   transition: 200ms;
